@@ -8,7 +8,6 @@
 
 #import <Foundation/Foundation.h>
 
-
 FILE *fileReader(const char * filename)
 {
     FILE *wordFile = fopen(filename, "r");
@@ -34,6 +33,8 @@ int main(int argc, const char * argv[]) {
             return 1;
         }
         
+        
+        NSLog(@"alibaba-inc, It's secret! Can you get it?");
         fileReader(argv[1]);
        
     }
